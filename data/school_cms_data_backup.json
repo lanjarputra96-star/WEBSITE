@@ -1,0 +1,549 @@
+{
+  "schoolInfo": {
+    "name": "SMA Nusantara Cendekia",
+    "tagline": "Mewujudkan Generasi Berkarakter Pancasila, Unggul dalam Iptek dan Berwawasan Global",
+    "npsn": "20108942",
+    "akreditasi": "A (Unggul) - BAN-S/M",
+    "tahunBerdiri": "1996",
+    "email": "info@smanusantaracendekia.sch.id",
+    "phone": "(021) 7889-4211",
+    "whatsapp": "0812-9988-7766",
+    "address": "Jl. Pendidikan Karakter No. 45, Kebayoran Baru, Jakarta Selatan 12150",
+    "mapsEmbedUrl": "https://maps.google.com/maps?q=Jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    "operatingHours": "Senin - Jumat: 07.00 - 16.00 WIB",
+    "socialMedia": {
+      "instagram": "https://instagram.com",
+      "facebook": "https://facebook.com",
+      "youtube": "https://youtube.com",
+      "twitter": "https://x.com"
+    },
+    "logoUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=120&h=120&q=80"
+  },
+  "hero": {
+    "badgeText": "Seleksi Penerimaan Murid Baru (SPMB) 2026/2027 Telah Dibuka!",
+    "badgeActive": true,
+    "headline": "Membina Prestasi Gemilang dengan Pendidikan Berkarakter & Berstandar Internasional",
+    "subheadline": "SMA Nusantara Cendekia memadukan kurikulum nasional merdeka dengan wawasan global, riset sains, teknologi digital, dan penanaman budi pekerti luhur.",
+    "primaryBtnText": "Daftar SPMB Online",
+    "primaryBtnLink": "#spmb",
+    "secondaryBtnText": "Jelajahi Profil Sekolah",
+    "secondaryBtnLink": "#profil",
+    "bgImageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80",
+    "statsBadges": [
+      {
+        "label": "Akreditasi",
+        "value": "A (Unggul)",
+        "icon": "Award"
+      },
+      {
+        "label": "Kelulusan Masuk PTN Favorit",
+        "value": "94.8%",
+        "icon": "GraduationCap"
+      },
+      {
+        "label": "Juara Olimpiade & Lomba",
+        "value": "150+ Trofi",
+        "icon": "Trophy"
+      }
+    ]
+  },
+  "kepalaSekolah": {
+    "name": "Dr. H. Bambang Sudarmono, M.Pd.",
+    "title": "Kepala Sekolah SMA Nusantara Cendekia",
+    "photoUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+    "greeting": "Selamat datang di portal resmi SMA Nusantara Cendekia. Pendidikan bukan sekadar transfer ilmu pengetahuan, melainkan proses holistik menumbuhkan insan berintegritas, mandiri, peduli sesama, dan tangguh menghadapi era disrupsi teknologi. Kami berkomitmen menyediakan lingkungan belajar inklusif, sarana modern, serta bimbingan terbaik untuk mengantarkan putra-putri Anda menembus perguruan tinggi impian dunia.",
+    "quote": "Mendidik pikiran tanpa mendidik budi pekerti bukanlah pendidikan yang sejati."
+  },
+  "visiMisi": {
+    "visi": "Menjadi institusi pendidikan menengah unggulan nasional yang melahirkan generasi beriman, cendekia, berkarakter luhur, berjiwa wirausaha, dan berdaya saing global.",
+    "showTujuan": true,
+    "showNilaiUtama": true,
+    "misi": [
+      "Menyelenggarakan proses pembelajaran transformatif berbasis digital, riset ilmiah, dan penalaran kritis.",
+      "Menumbuhkan nilai-nilai integritas, spiritualitas, toleransi, dan kecintaan terhadap kebudayaan Nusantara.",
+      "Memfasilitasi pengembangan talenta akademik, seni, riset robotika, bahasa asing, dan olahraga secara optimal.",
+      "Menjalin kemitraan strategis dengan perguruan tinggi ternama nasional, universitas mitra luar negeri, dan industri.",
+      "Menerapkan tata kelola sekolah yang transparan, akuntabel, modern, dan berorientasi pada kepuasan civitas akademika."
+    ],
+    "tujuan": [
+      "Menghantarkan 95% lulusan diterima di perguruan tinggi negeri (PTN) klaster 1 dan kampus terkemuka luar negeri.",
+      "Meraih medali emas pada ajang OSN, O2SN, FLS2N, serta kejuaraan riset ilmiah internasional tiap tahunnya.",
+      "Mencapai sertifikasi kecakapan bahasa Inggris (IELTS/TOEFL) dan literasi komputasional bagi seluruh siswa."
+    ],
+    "nilaiUtama": [
+      {
+        "title": "Integritas & Akhlak",
+        "desc": "Menjunjung tinggi kejujuran moral, tanggung jawab amanah, dan budi pekerti luhur di segala aspek kehidupan.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Keunggulan Akademik",
+        "desc": "Semangat belajar tanpa henti, rasa ingin tahu ilmiah yang tajam, dan penalaran logis berbasis data.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Wawasan Global",
+        "desc": "Kemampuan komunikasi multibahasa, adaptif terhadap perkembangan dunia, dengan akar kebangsaan yang kokoh.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Kolaborasi & Empati",
+        "desc": "Kemampuan bekerja sama dalam keberagaman, berjiwa sosial tinggi, serta peduli terhadap kelestarian lingkungan.",
+        "icon": "Users"
+      }
+    ]
+  },
+  "statistik": [
+    {
+      "id": "1",
+      "label": "Siswa Aktif",
+      "value": "1.050+",
+      "subtext": "Terbagi dalam 30 Rombongan Belajar",
+      "icon": "Users"
+    },
+    {
+      "id": "2",
+      "label": "Guru & Tenaga Ahli",
+      "value": "78",
+      "subtext": "100% S1 & 42% Bergelar Magister (S2)",
+      "icon": "GraduationCap"
+    },
+    {
+      "id": "3",
+      "label": "Rasio Masuk PTN / LN",
+      "value": "94.8%",
+      "subtext": "UI, ITB, UGM, Unair, ITS & Luar Negeri",
+      "icon": "TrendingUp"
+    },
+    {
+      "id": "4",
+      "label": "Ekstrakurikuler & Klub",
+      "value": "28",
+      "subtext": "Bidang Sains, Bahasa, Seni, Olahraga",
+      "icon": "Compass"
+    },
+    {
+      "id": "5",
+      "label": "Prestasi Juara 3 Tahun",
+      "value": "230+",
+      "subtext": "Tingkat Kota, Provinsi, Nasional & Dunia",
+      "icon": "Trophy"
+    },
+    {
+      "id": "6",
+      "label": "Laboratorium & Studio",
+      "value": "12",
+      "subtext": "Lab Riset, AI, Bahasa, Musik & Multimedia",
+      "icon": "Cpu"
+    }
+  ],
+  "program": [
+    {
+      "id": "p1",
+      "title": "Kelas Unggulan Sains & Riset (Science Stream)",
+      "subtitle": "Fokus olimpiade sains, penulisan karya ilmiah remaja, dan robotika modern",
+      "description": "Program akselerasi kompetensi saintifik yang dibimbing langsung oleh dosen pembina olimpiade dan praktisi riset laboratorium terstandar.",
+      "icon": "Atom",
+      "features": [
+        "Praktikum laboratorium bioteknologi & fisika kuantum",
+        "Bimbingan intensif OSN (Olimpiade Sains Nasional)",
+        "Kunjungan riset berkala ke BRIN dan industri teknologi",
+        "Proyek publikasi jurnal ilmiah siswa tahunan"
+      ],
+      "badge": "Favorit Sains"
+    },
+    {
+      "id": "p2",
+      "title": "International Bilingual & Cambridge Pathway",
+      "subtitle": "Pembelajaran bahasa pengantar ganda dan kurikulum internasional",
+      "description": "Mempersiapkan siswa menembus universitas global dengan penguasaan Bahasa Inggris akademis, persiapan IELTS/SAT, dan pembekalan wawasan diplomasi.",
+      "icon": "Languages",
+      "features": [
+        "Pengantar dwibahasa (English - Indonesian)",
+        "Persiapan sertifikasi resmi IELTS dan TOEFL ITP",
+        "Program Model United Nations (MUN) & Debat Bahasa Inggris",
+        "Student Exchange & Virtual Campus Tour ke universitas mitra"
+      ],
+      "badge": "Global Pathway"
+    },
+    {
+      "id": "p3",
+      "title": "Digital Technology & Coding Academy",
+      "subtitle": "Literasi komputasi, pengembangan aplikasi, kecerdasan buatan, dan desain kreatif",
+      "description": "Membekali generasi muda dengan keterampilan abad 21 melalui pemecahan masalah algoritmis, UI/UX design, data science dasar, dan etika teknologi AI.",
+      "icon": "Code2",
+      "features": [
+        "Dasar pemrograman Python, Web & App Development",
+        "Laboratorium komputer multimedia spesifikasi tinggi",
+        "Pelatihan desain kreatif 3D, animasi, dan videografi",
+        "Hackathon dan pameran inovasi teknologi tahunan"
+      ],
+      "badge": "Digital Era"
+    },
+    {
+      "id": "p4",
+      "title": "Penguatan Karakter & Tahfidz / Spiritual Youth",
+      "subtitle": "Penempaan kepemimpinan, budi pekerti luhur, dan spiritualitas",
+      "description": "Menyeimbangkan kecerdasan intelektual dengan kecerdasan spiritual, program tahfidz Al-Qur’an bersanad bagi muslim, serta bimbingan kerohanian bagi agama lainnya.",
+      "icon": "HeartHandshake",
+      "features": [
+        "Program Tahfidz Target 3 - 5 Juz terstruktur",
+        "Bimbingan konseling karir & kepribadian berkala",
+        "Leadership Camp kepemimpinan dan bela negara",
+        "Kegiatan bakti sosial dan pemberdayaan masyarakat desa"
+      ],
+      "badge": "Karakter Mulia"
+    }
+  ],
+  "berita": [
+    {
+      "id": "b1",
+      "title": "Tim Robotika SMA Nusantara Cendekia Raih Juara 1 Kontes Inovasi Otomasi Pelajar Nasional 2026",
+      "category": "Prestasi",
+      "date": "02 September 2026",
+      "author": "Humas & Komunikasi",
+      "summary": "Tim yang beranggotakan tiga siswa kelas XI berhasil menciptakan prototipe sistem irigasi pintar bertenaga surya terintegrasi AI, mengungguli 80 tim se-Indonesia.",
+      "content": "Prestasi membanggakan kembali dipersembahkan oleh siswa-siswi SMA Nusantara Cendekia. Pada gelaran Kontes Inovasi Otomasi Pelajar Nasional 2026 di Jakarta Convention Center, tim robotika sekolah yang digawangi oleh Rayhan Pratama, Anindya Putri, dan Kevin Arya menyabet Juara 1 Kategori Teknologi Tepat Guna.\n\nKarya mereka yang bertajuk \"AgriSync AI: Solar-Powered IoT Irrigation System\" diapresiasi para juri karena mampu mendeteksi tingkat kelembaban tanah dan kebutuhan nutrisi tanaman secara otomatis dengan efisiensi energi hingga 40%.\n\n\"Kami sangat bangga atas dedikasi dan kerja keras para siswa serta pembimbing laboratorium. Sekolah akan terus memfasilitasi riset aplikatif yang memberi manfaat nyata bagi masyarakat luas,\" ungkap Kepala Sekolah Dr. H. Bambang Sudarmono.",
+      "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
+      "isPinned": true
+    },
+    {
+      "id": "b2",
+      "title": "Sosialisasi Alur Seleksi Masuk PTN Jalur SNBP & SNBT Bersama Pakar Pendidikan",
+      "category": "Pengumuman",
+      "date": "28 Agustus 2026",
+      "author": "Tim Bimbingan Konseling",
+      "summary": "Seluruh orang tua dan siswa kelas XII diundang mengikuti webinar komprehensif bedah strategi pemilihan program studi dan portofolio rapor untuk tembus PTN unggulan.",
+      "content": "Guna mempersiapkan para peserta didik kelas XII menuju jenjang perguruan tinggi, sekolah menyelenggarakan seminar bertajuk \"Meraih Impian Kuliah di Kampus Idaman: Bedah Trik SNBP & SNBT 2027\". Seminar ini menghadirkan narasumber pengamat pendidikan nasional serta alumni yang sukses menembus FK UI, STEI ITB, dan FEB UGM.\n\nPembahasan mencakup pemetaan nilai rapor semester 1-5, penyesuaian sertifikat prestasi berbobot nasional, simulasi try out berbasis komputer berkala, serta pemilihan jurusan strategis agar peluang lolos maksimal.",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80",
+      "isPinned": true
+    },
+    {
+      "id": "b3",
+      "title": "Pekan Raya Literasi dan Budaya Nusantara Menghadirkan Pagelaran Seni Siswa",
+      "category": "Kegiatan",
+      "date": "20 Agustus 2026",
+      "author": "OSIS & Seksi Seni",
+      "summary": "Suasana semarak mewarnai aula sekolah saat para siswa menampilkan sendratari daerah, pameran antologi puisi, dan stan kuliner tradisional nusantara.",
+      "content": "Sebagai wujud nyata pelestarian budaya bangsa, OSIS SMA Nusantara Cendekia menyelenggarakan Pekan Raya Literasi dan Budaya Nusantara selama tiga hari berturut-turut. Rangkaian acara diisi dengan pementasan teater kolosal, bedah buku karya sastra siswa, lomba pidato dwibahasa, serta bazar kuliner nusantara yang dikelola secara mandiri oleh setiap kelas.\n\nKegiatan ini bertujuan menumbuhkan rasa cinta tanah air, kerja sama tim, sekaligus keterampilan manajemen kewirausahaan sejak dini.",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1000&q=80",
+      "isPinned": false
+    },
+    {
+      "id": "b4",
+      "title": "Seleksi Penerimaan Murid Baru (SPMB) Jalur Prestasi & Reguler Gelombang 1 Resmi Dimulai",
+      "category": "Berita",
+      "date": "15 Agustus 2026",
+      "author": "Panitia SPMB",
+      "summary": "Pendaftaran gelombang pertama dibuka untuk calon siswa berprestasi akademik, tahfidz, dan non-akademik dengan beasiswa uang pangkal hingga 100%.",
+      "content": "Panitia Seleksi Penerimaan Murid Baru (SPMB) SMA Nusantara Cendekia resmi membuka portal registrasi daring. Sekolah menyediakan berbagai jalur masuk, antara lain Jalur Prestasi Rapor, Jalur Tahfidz Qur’an minimal 3 Juz, Jalur Bakat Olahraga & Seni, serta Jalur Reguler Tes Potensi Akademik.\n\nCalon wali murid dapat mengunduh panduan lengkap, jadwal verifikasi berkas, dan rincian pembiayaan pada menu SPMB di laman resmi ini.",
+      "imageUrl": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1000&q=80",
+      "isPinned": false
+    }
+  ],
+  "prestasi": [
+    {
+      "id": "pr1",
+      "title": "Medali Emas Olimpiade Sains Nasional (OSN) Bidang Fisika",
+      "category": "Akademik",
+      "recipient": "Ahmad Faiz Al-Ghifari (Kelas XII MIPA 1)",
+      "level": "Nasional",
+      "year": "2026",
+      "imageUrl": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=600&q=80",
+      "description": "Berhasil menyisihkan ratusan finalis dari seluruh provinsi di Indonesia dengan skor praktikum laboratorium tertinggi."
+    },
+    {
+      "id": "pr2",
+      "title": "Best Delegate Award pada Singapore Model United Nations (SMUN)",
+      "category": "Akademik",
+      "recipient": "Clara Aurelia Wijaya (Kelas XI IPS 1)",
+      "level": "Internasional",
+      "year": "2026",
+      "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
+      "description": "Mewakili delegasi isu perubahan iklim global dalam simulasi sidang PBB pelajar se-Asia Pasifik."
+    },
+    {
+      "id": "pr3",
+      "title": "Juara 1 Kejuaraan Basket Pelajar DBL Series Jakarta Selatan",
+      "category": "Olahraga",
+      "recipient": "Tim Basket Putra Garuda Cendekia",
+      "level": "Provinsi",
+      "year": "2025",
+      "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80",
+      "description": "Tampil dominan sepanjang turnamen dan mengamankan tiket menuju Championship Series DKI Jakarta."
+    },
+    {
+      "id": "pr4",
+      "title": "Juara 1 FLS2N Festival Lomba Seni Siswa Tingkat Provinsi",
+      "category": "Seni & Budaya",
+      "recipient": "Nadira Salsabila (Kelas X-A)",
+      "level": "Provinsi",
+      "year": "2025",
+      "imageUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80",
+      "description": "Menampilkan komposisi solo vokal lagu daerah nusantara dengan aransemen orkestrasi kontemporer."
+    }
+  ],
+  "fasilitas": [
+    {
+      "id": "f1",
+      "name": "Smart Classroom Interaktif",
+      "category": "Akademik",
+      "description": "Ruang kelas ber-AC dilengkapi papan sentuh digital pintar (Smart Interactive Display), koneksi internet gigabit, dan pencahayaan ergonomis.",
+      "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "f2",
+      "name": "Laboratorium Sains & Bioteknologi",
+      "category": "Laboratorium",
+      "description": "Peralatan mikroskop elektron, sentrifugal, alat uji kimia analitik, dan perlengkapan keselamatan standar laboratorium universitas.",
+      "imageUrl": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "f3",
+      "name": "Perpustakaan Digital Modern & Co-working",
+      "category": "Akademik",
+      "description": "Koleksi 15.000+ buku fisik dan akses e-library internasional, ruang diskusi kedap suara, serta pojok santai membaca yang nyaman.",
+      "imageUrl": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "f4",
+      "name": "Gelanggang Olahraga Indoor Multifungsi",
+      "category": "Olahraga",
+      "description": "Lapangan basket, futsal, badminton, dan voli berlantai vinyl standar internasional dengan tribun penonton berkapasitas 500 orang.",
+      "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "f5",
+      "name": "Laboratorium Komputer & AI Center",
+      "category": "Laboratorium",
+      "description": "80 unit PC performa tinggi dengan GPU terkini untuk pembelajaran pemrograman, desain multimedia 3D, dan pemrosesan AI.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "f6",
+      "name": "Masjid & Pusat Kerohanian Kampus",
+      "category": "Ibadah & Seni",
+      "description": "Tempat ibadah megah dan asri berkapasitas 800 jamaah untuk sholat berjamaah, kajian keputrian, dan kegiatan spiritual sekolah.",
+      "imageUrl": "https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "guru": [
+    {
+      "id": "g1",
+      "name": "Dra. Sri Wahyuningsih, M.Si.",
+      "role": "Wakil Kepala Sekolah Bidang Kurikulum",
+      "subject": "Biologi & Sains Terapan",
+      "education": "S2 Bioteknologi Institut Teknologi Bandung (ITB)",
+      "photoUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Pengalaman 20 tahun membimbing siswa peraih medali olimpiade biologi dan seleksi masuk Fakultas Kedokteran PTN."
+    },
+    {
+      "id": "g2",
+      "name": "Rahmat Hidayat, M.Kom.",
+      "role": "Koordinator Laboratorium Komputer & AI",
+      "subject": "Informatika & Robotika",
+      "education": "S2 Ilmu Komputer Universitas Indonesia (UI)",
+      "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "bio": "Praktisi teknologi bersertifikasi Google Cloud Educator yang berdedikasi mengasah bakat digital anak bangsa."
+    },
+    {
+      "id": "g3",
+      "name": "Sarah Jennifer Scott, M.A.",
+      "role": "Kepala Program Cambridge & Bahasa",
+      "subject": "Bahasa Inggris & Academic Writing",
+      "education": "Master of Arts in Applied Linguistics, University of Melbourne",
+      "photoUrl": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80",
+      "bio": "Instruktur native speaker berpengalaman melatih kemampuan debat bahasa Inggris dan persiapan studi ke luar negeri."
+    },
+    {
+      "id": "g4",
+      "name": "Drs. Hendra Gunawan, M.Pd.",
+      "role": "Guru Utama Matematika Lanjut",
+      "subject": "Matematika Peminatan & Logika",
+      "education": "S2 Pendidikan Matematika Universitas Negeri Jakarta (UNJ)",
+      "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+      "bio": "Metode pengajaran matematika kontekstual yang menyenangkan, terbukti meningkatkan rata-rata skor SNBT siswa secara signifikan."
+    }
+  ],
+  "ppdb": {
+    "isOpen": true,
+    "academicYear": "2026/2027",
+    "registrationPeriod": "01 September 2026 - 31 Desember 2026",
+    "description": "SMA Nusantara Cendekia membuka kesempatan bagi putra-putri terbaik bangsa lulusan SMP/MTs sederajat untuk bergabung menjadi bagian dari komunitas pembelajar unggul dan berakhlak mulia.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Registrasi Akun Daring",
+        "desc": "Isi formulir biodata awal calon siswa melalui laman pendaftaran resmi sekolah."
+      },
+      {
+        "step": 2,
+        "title": "Unggah Dokumen Berkas",
+        "desc": "Unggah scan rapor SMP semester 1-5, kartu keluarga, akta lahir, dan sertifikat prestasi (jika ada)."
+      },
+      {
+        "step": 3,
+        "title": "Tes Potensi & Wawancara",
+        "desc": "Mengikuti asesmen diagnostik penalaran akademik dan wawancara peminatan bersama orang tua."
+      },
+      {
+        "step": 4,
+        "title": "Pengumuman & Daftar Ulang",
+        "desc": "Melihat hasil seleksi secara online dan melakukan konfirmasi administrasi daftar ulang."
+      }
+    ],
+    "requirements": [
+      "Lulusan SMP/MTs sederajat tahun 2025 atau 2026.",
+      "Rata-rata nilai rapor semester 1 - 5 minimal 80 untuk mata pelajaran Bahasa Indonesia, Matematika, IPA, dan Bahasa Inggris.",
+      "Fotokopi Akta Kelahiran dan Kartu Keluarga (KK).",
+      "Pas foto terbaru ukuran 3x4 berwarna (latar belakang merah/biru).",
+      "Sertifikat kejuaraan minimal tingkat kota/kabupaten bagi pendaftar jalur prestasi.",
+      "Surat keterangan berkelakuan baik dari sekolah asal."
+    ],
+    "brochureUrl": "#",
+    "registrationUrl": "https://spmb.jakarta.go.id",
+    "registrationButtonText": "Daftar SPMB Online 2026/2027",
+    "registrationOpenNewTab": true,
+    "contactPerson": "Admin SPMB: 0812-9988-7766 (WhatsApp Call/Chat)"
+  },
+  "pusatInformasi": [
+    {
+      "id": "pi_1",
+      "title": "Portal Akademik Siswa (SIAKAD)",
+      "category": "Layanan Akademik",
+      "description": "Akses jadwal mata pelajaran harian, rekapitulasi presensi kehadiran, nilai raport semester, serta kartu hasil studi siswa secara mandiri.",
+      "icon": "Laptop",
+      "badge": "Online 24 Jam",
+      "buttonText": "Buka Portal SIAKAD Siswa",
+      "buttonUrl": "https://siakad.kemdikbud.go.id",
+      "openInNewTab": true
+    },
+    {
+      "id": "pi_2",
+      "title": "Perpustakaan Digital (E-Library)",
+      "category": "Sumber Belajar",
+      "description": "Jelajahi ribuan koleksi e-book kurikulum merdeka, ensiklopedia ilmiah, jurnal penelitian, serta katalog peminjaman buku sekolah online.",
+      "icon": "BookOpen",
+      "badge": "Akses Bebas",
+      "buttonText": "Kunjungi E-Perpustakaan",
+      "buttonUrl": "https://perpustakaan.kemdikbud.go.id",
+      "openInNewTab": true
+    },
+    {
+      "id": "pi_3",
+      "title": "Computer Based Test (CBT & Asesmen)",
+      "category": "Ujian & Asesmen",
+      "description": "Platform pelaksanaan Asesmen Sumatif Akhir Semester, simulasi try out UTBK SNBT, dan asesmen diagnostik penalaran akademik terpusat.",
+      "icon": "FileCheck",
+      "badge": "Server Ujian",
+      "buttonText": "Masuk Ruang Ujian CBT",
+      "buttonUrl": "https://pusmendik.kemdikbud.go.id/an",
+      "openInNewTab": true
+    },
+    {
+      "id": "pi_4",
+      "title": "Pusat Unduhan & Dokumen Sekolah",
+      "category": "Administrasi",
+      "description": "Unduh kalender akademik tahunan, tata tertib siswa, formulir legalisir ijazah, serta template surat permohonan izin belajar.",
+      "icon": "Download",
+      "badge": "Dokumen Resmi",
+      "buttonText": "Unduh Berkas & Dokumen",
+      "buttonUrl": "https://drive.google.com",
+      "openInNewTab": true
+    },
+    {
+      "id": "pi_5",
+      "title": "Portal Ikatan Alumni & Info Karir",
+      "category": "Komunitas & Alumni",
+      "description": "Jejaring komunikasi ribuan alumni lintas angkatan, informasi bursa beasiswa perguruan tinggi ternama, dan program bimbingan karir.",
+      "icon": "Users",
+      "badge": "Jejaring Nasional",
+      "buttonText": "Gabung Portal Alumni",
+      "buttonUrl": "https://alumni.smanusantaracendekia.sch.id",
+      "openInNewTab": true
+    },
+    {
+      "id": "pi_6",
+      "title": "Layanan Bimbingan Konseling (BK)",
+      "category": "Bimbingan & Konseling",
+      "description": "Kanal konsultasi psikologis, pendampingan minat bakat, konsultasi pemilihan jurusan kuliah, serta pengaduan perlindungan siswa.",
+      "icon": "ShieldCheck",
+      "badge": "Rahasia & Aman",
+      "buttonText": "Konsultasi Online BK",
+      "buttonUrl": "https://wa.me/6281299887766",
+      "openInNewTab": true
+    }
+  ],
+  "sectionHeaders": {
+    "statistik": {
+      "badge": "Angka & Fakta",
+      "title": "Statistik & Keunggulan Sekolah",
+      "subtitle": "Bukti nyata dedikasi dan mutu pendidikan yang terus bertumbuh dari tahun ke tahun."
+    },
+    "sambutan": {
+      "badge": "Kepemimpinan Sekolah",
+      "title": "Sambutan Kepala Sekolah",
+      "subtitle": "Pesan hangat dan komitmen pendidikan dari pimpinan untuk seluruh civitas akademika dan masyarakat."
+    },
+    "visiMisi": {
+      "badge": "Arah & Nilai Luhur",
+      "title": "Visi, Misi & Komitmen Pendidikan",
+      "subtitle": "Landasan filosofis dan pedoman strategis dalam membentuk generasi unggul berkarakter."
+    },
+    "program": {
+      "badge": "Kurikulum & Peminatan",
+      "title": "Program Unggulan Sekolah",
+      "subtitle": "Didesain khusus untuk menggali potensi setiap siswa melalui jalur peminatan yang terarah dan aplikatif."
+    },
+    "prestasi": {
+      "badge": "Rekam Jejak Prestasi",
+      "title": "Prestasi Membanggakan Siswa",
+      "subtitle": "Dedikasi pembinaan talenta membuahkan ratusan gelar juara dari kancah regional hingga panggung internasional."
+    },
+    "berita": {
+      "badge": "Kabar & Informasi Sekolah",
+      "title": "Berita & Pengumuman Terkini",
+      "subtitle": "Informasi kegiatan akademik, sosialisasi kurikulum, dan dinamika kehidupan civitas sekolah."
+    },
+    "fasilitas": {
+      "badge": "Sarana & Prasarana",
+      "title": "Fasilitas Kampus Modern",
+      "subtitle": "Didukung infrastruktur teknologi terkini untuk menunjang kenyamanan eksplorasi akademik dan bakat non-akademik."
+    },
+    "guru": {
+      "badge": "Pendidik Berkualitas",
+      "title": "Dewan Guru & Tenaga Kependidikan",
+      "subtitle": "Didukung tenaga pendidik berpengalaman, berpendidikan tinggi, dan berdedikasi membimbing generasi penerus bangsa."
+    },
+    "ppdb": {
+      "badge": "Penerimaan Siswa Baru",
+      "title": "Pendaftaran Peserta Didik Baru (SPMB)",
+      "subtitle": "Bergabunglah bersama keluarga besar SMA Nusantara Cendekia dan raih masa depan gemilang dengan pendidikan bertaraf global."
+    },
+    "pusatInformasi": {
+      "badge": "Layanan Digital & Referensi",
+      "title": "Pusat Informasi & Tautan Penting",
+      "subtitle": "Akses cepat berbagai panduan, portal resmi, dan layanan civitas sekolah dalam satu genggaman."
+    },
+    "kontak": {
+      "badge": "Layanan Komunikasi",
+      "title": "Hubungi & Kunjungi Sekolah Kami",
+      "subtitle": "Kami siap menyambut kehadiran Bapak/Ibu dan calon siswa untuk konsultasi pendidikan maupun kunjungan kampus."
+    }
+  },
+  "sectionVisibility": {
+    "hero": true,
+    "statistik": true,
+    "sambutan": true,
+    "visiMisi": true,
+    "program": true,
+    "prestasi": true,
+    "berita": true,
+    "fasilitas": true,
+    "guru": true,
+    "ppdb": true,
+    "pusatInformasi": true,
+    "kontak": true
+  },
+  "lastUpdated": "2026-09-09T00:47:30.993Z"
+}

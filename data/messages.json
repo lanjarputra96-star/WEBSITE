@@ -1,0 +1,22 @@
+[
+  {
+    "id": "msg_1725700000000",
+    "name": "Budi Santoso, S.Pd.",
+    "email": "budi.santoso@gmail.com",
+    "phone": "0812-8899-7711",
+    "subject": "Konsultasi SPMB 2026/2027",
+    "message": "Selamat pagi bapak/ibu panitia, saya ingin berkonsultasi mengenai jalur prestasi tahfidz Qur’an minimal 3 Juz untuk anak saya. Apakah ada tes hafalan langsung dan berapa rincian potongan biaya pendidikannya? Terima kasih.",
+    "createdAt": "2026-09-07T09:54:52.043Z",
+    "isRead": false
+  },
+  {
+    "id": "msg_1725600000000",
+    "name": "Ibu Ratna Dewi",
+    "email": "ratna.dewi92@yahoo.com",
+    "phone": "0857-1122-3344",
+    "subject": "Permohonan Kunjungan Sekolah",
+    "message": "Halo Humas SMA Nusantara Cendekia, apakah diperbolehkan bagi orang tua calon siswa untuk melakukan kunjungan/school tour melihat fasilitas laboratorium dan perpustakaan di hari kerja? Mohon petunjuknya.",
+    "createdAt": "2026-09-06T11:54:52.044Z",
+    "isRead": true
+  }
+]

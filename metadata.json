@@ -1,0 +1,7 @@
+{
+  "name": "Web Sekolah & Portal Admin CMS",
+  "description": "Landing page profil sekolah modern terpadu dilengkapi sistem login admin untuk mengelola seluruh konten dan informasi website secara langsung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
