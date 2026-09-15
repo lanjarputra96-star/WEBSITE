@@ -1,4 +1,4 @@
-name: Deploy Vite to GitHub Pages
+name: Deploy Website & Sync to Cloudflare
 
 on:
   push:
@@ -19,6 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Sync Database to Cloudflare KV
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_KV_NAMESPACE_ID: ${{ secrets.CLOUDFLARE_KV_NAMESPACE_ID || '5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b' }}
+        run: node scripts/sync-to-cloudflare.js
 
       - name: Build project
         run: npm run build

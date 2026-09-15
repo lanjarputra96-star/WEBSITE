@@ -33,13 +33,6 @@ let cloudflareKvNamespaceId =
 let cloudflareAccountId = process.env.CLOUDFLARE_ACCOUNT_ID || '';
 let cloudflareApiToken = process.env.CLOUDFLARE_API_TOKEN || '';
 
-// Detect if user set CLOUDFLARE_API_TOKEN to their KV Namespace UUID (e.g., 5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b)
-if (cloudflareApiToken && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(cloudflareApiToken.trim())) {
-  console.log(`[Cloudflare] Detected KV Namespace ID in CLOUDFLARE_API_TOKEN field: ${cloudflareApiToken}`);
-  cloudflareKvNamespaceId = cloudflareApiToken.trim();
-  cloudflareApiToken = ''; // Clear so server doesn't make invalid Bearer token calls
-}
-
 // If process.env.CLOUDFLARE_ACCOUNT_ID is an email address, warn and prepare for override
 if (cloudflareAccountId.includes('@')) {
   console.warn(`[Cloudflare] CLOUDFLARE_ACCOUNT_ID berisi alamat email ("${cloudflareAccountId}"). Mengutamakan file konfigurasi lokal jika ada.`);

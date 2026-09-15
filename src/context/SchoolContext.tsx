@@ -31,6 +31,7 @@ interface SchoolContextType {
   toggleSectionVisibility: (sectionKey: keyof SectionVisibility, visible: boolean) => void;
   resetToDefault: () => void;
   exportConfigAsJson: () => void;
+  exportDataForGithub: () => void;
   importConfigFromJson: (jsonStr: string) => { success: boolean; message: string };
   isAdminLoggedIn: boolean;
   adminUser: AdminUser;
@@ -504,6 +505,21 @@ export const SchoolProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     }
   };
 
+  const exportDataForGithub = () => {
+    try {
+      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute('href', dataStr);
+      downloadAnchor.setAttribute('download', 'school_cms_data.json');
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+      showToast('File school_cms_data.json siap di-commit ke folder data/ di GitHub!');
+    } catch (e) {
+      showToast('Gagal mengunduh file data untuk GitHub.');
+    }
+  };
+
   const importConfigFromJson = (jsonStr: string): { success: boolean; message: string } => {
     try {
       const parsed = JSON.parse(jsonStr);
@@ -777,6 +793,7 @@ export const SchoolProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         toggleSectionVisibility,
         resetToDefault,
         exportConfigAsJson,
+        exportDataForGithub,
         importConfigFromJson,
         isAdminLoggedIn,
         adminUser,

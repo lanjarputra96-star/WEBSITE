@@ -3,7 +3,21 @@ compatibility_date = "2024-01-01"
 pages_build_output_dir = "dist"
 
 # Cloudflare KV Namespace configuration
-# ID: 5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b (Namespace: web sekolah1)
+# Primary ID: 5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b (Namespace: web sekolah1)
 [[kv_namespaces]]
 binding = "SCHOOL_CMS_KV"
 id = "5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b"
+
+# Multi-binding aliases (Supports KV, DATABASE, or DB if configured in dashboard)
+[[kv_namespaces]]
+binding = "KV"
+id = "5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b"
+
+[[kv_namespaces]]
+binding = "DATABASE"
+id = "5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b"
+
+[[kv_namespaces]]
+binding = "DB"
+id = "5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b"
+

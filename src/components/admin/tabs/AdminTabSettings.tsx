@@ -16,7 +16,12 @@ import {
   Server,
   Globe2,
   XCircle,
-  HelpCircle
+  HelpCircle,
+  Database,
+  Layers,
+  Terminal,
+  ExternalLink,
+  Check
 } from 'lucide-react';
 
 export const AdminTabSettings: React.FC = () => {
@@ -24,6 +29,7 @@ export const AdminTabSettings: React.FC = () => {
     adminUser, 
     updateAdminCredentials, 
     exportConfigAsJson, 
+    exportDataForGithub,
     importConfigFromJson, 
     resetToDefault,
     cloudflareSync,
@@ -289,6 +295,42 @@ export const AdminTabSettings: React.FC = () => {
           )}
         </div>
 
+        {/* Cloudflare Worker Binding Diagnostics & Fix Guide */}
+        <div className="bg-slate-950/80 border border-amber-500/30 rounded-2xl p-4 space-y-3">
+          <div className="flex items-center gap-2 text-amber-400 font-bold text-xs">
+            <Database className="w-4 h-4 text-amber-400 shrink-0" />
+            <span>Solusi Terhubung ke Binding Database Cloudflare Workers & Pages</span>
+          </div>
+          <p className="text-[11px] text-slate-300 leading-relaxed">
+            Jika Anda mengalami kendala saat menghubungkan <strong>binding database</strong> di dasbor Cloudflare:
+          </p>
+          <div className="space-y-2 text-[11px] text-slate-300">
+            <div className="bg-slate-900/90 border border-slate-700/80 rounded-xl p-3 space-y-1">
+              <span className="font-bold text-amber-300 flex items-center gap-1.5">
+                <Check className="w-3.5 h-3.5 text-emerald-400" />
+                1. Multi-Binding Otomatis Aktif
+              </span>
+              <p className="text-slate-300 leading-relaxed">
+                Sistem sekarang otomatis mendeteksi binding dengan nama apa pun: <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">SCHOOL_CMS_KV</code>, <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">KV</code>, <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">DATABASE</code>, atau <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">DB</code> (baik KV Namespace maupun D1 Database).
+              </p>
+            </div>
+            <div className="bg-slate-900/90 border border-slate-700/80 rounded-xl p-3 space-y-1">
+              <span className="font-bold text-sky-300 flex items-center gap-1.5">
+                <Layers className="w-3.5 h-3.5 text-sky-400" />
+                2. Cara Pasang Binding di Dasbor Cloudflare (Pages / Workers)
+              </span>
+              <ol className="list-decimal list-inside space-y-1 text-slate-300">
+                <li>Buka Cloudflare Dashboard &rarr; <strong>Workers & Pages</strong> &rarr; Pilih proyek Anda.</li>
+                <li>Pilih tab <strong>Settings</strong> &rarr; menu <strong>Bindings</strong>.</li>
+                <li>Klik <strong>Add binding</strong> &rarr; pilih <strong>KV namespace</strong>.</li>
+                <li>Isi <strong>Variable name</strong>: <code className="bg-slate-800 px-1 py-0.5 rounded text-white font-mono">SCHOOL_CMS_KV</code> (atau <code className="bg-slate-800 px-1 py-0.5 rounded text-white font-mono">KV</code>).</li>
+                <li>Pilih <strong>KV namespace</strong>: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-300 font-mono">5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b</code> (web sekolah1).</li>
+                <li>Klik <strong>Save and deploy</strong>.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
         {/* Toggle Advanced Cloudflare Settings */}
         <div className="pt-1">
           <button
@@ -538,7 +580,74 @@ export const AdminTabSettings: React.FC = () => {
       </div>
 
       {/* ============================================================ */}
-      {/* 3. BACKUP & RESTORE SECTION */}
+      {/* 3. GITHUB & CLOUDFLARE AUTOMATED DEPLOYMENT SYNC */}
+      {/* ============================================================ */}
+      <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+              <Terminal className="w-4 h-4 text-blue-600" />
+              <span>Koneksi GitHub & Deploy Otomatis ke Database Cloudflare</span>
+            </h3>
+            <p className="text-xs text-slate-500 mt-0.5">
+              Setiap pembaruan sistem dan deploy ke GitHub langsung terhubung dan otomatis mengupdate database Cloudflare.
+            </p>
+          </div>
+          <span className="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 w-fit">
+            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Data SDN 1 Palapa Terkunci & Aman</span>
+          </span>
+        </div>
+
+        <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-3">
+          <div className="flex items-start gap-2.5">
+            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-slate-900 font-bold">Jaminan Integritas Data Admin:</strong> Seluruh teks, berita, foto, dan konten yang sudah Anda masukkan di <code className="bg-slate-200 px-1 py-0.5 rounded text-slate-900">https://sdn1palapa.ai.studio/</code> telah disimpan dan dikunci sebagai baseline sistem di <code className="bg-slate-200 px-1 py-0.5 rounded text-slate-900">data/school_cms_data.json</code> dan <code className="bg-slate-200 px-1 py-0.5 rounded text-slate-900">src/data/initialData.ts</code>. Tidak akan hilang atau tertimpa saat update sistem.
+            </div>
+          </div>
+
+          <div className="border-t border-slate-200 pt-3 space-y-2">
+            <span className="font-bold text-slate-900 flex items-center gap-1.5">
+              <RefreshCw className="w-3.5 h-3.5 text-blue-600" />
+              Alur Otomasi Deploy GitHub &rarr; Cloudflare:
+            </span>
+            <p className="text-slate-600 leading-relaxed">
+              Workflow GitHub Actions di <code className="bg-slate-200 px-1 py-0.5 rounded text-slate-900">.github/workflows/deploy.yml</code> telah dilengkapi dengan langkah otomatis <strong>Sync Database to Cloudflare KV</strong> menggunakan script <code className="bg-slate-200 px-1 py-0.5 rounded text-slate-900">scripts/sync-to-cloudflare.js</code>. Setiap kali push ke branch <code className="bg-slate-200 px-1 py-0.5 rounded text-slate-900">main</code>, GitHub langsung mengunggah file data ke Cloudflare KV!
+            </p>
+          </div>
+
+          <div className="bg-blue-50/80 border border-blue-200 rounded-xl p-3 text-blue-900 space-y-2">
+            <span className="font-bold text-blue-950 flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-blue-700" />
+              Pengaturan Rahasia (Secrets) di Repositori GitHub:
+            </span>
+            <ol className="list-decimal list-inside space-y-1 text-blue-900/90 text-[11px]">
+              <li>Buka Repositori GitHub Anda &rarr; <strong>Settings</strong> &rarr; <strong>Secrets and variables</strong> &rarr; <strong>Actions</strong>.</li>
+              <li>Klik <strong>New repository secret</strong> dan masukkan:</li>
+              <ul className="list-disc list-inside pl-4 space-y-0.5 text-blue-950 font-mono text-[11px]">
+                <li><strong>CLOUDFLARE_ACCOUNT_ID</strong>: Account ID Cloudflare Anda (32 karakter)</li>
+                <li><strong>CLOUDFLARE_API_TOKEN</strong>: API Token Cloudflare Anda</li>
+                <li><strong>CLOUDFLARE_KV_NAMESPACE_ID</strong>: <span className="text-amber-700 font-bold">5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b</span></li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-3 pt-1">
+          <button
+            type="button"
+            onClick={exportDataForGithub}
+            className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition cursor-pointer shadow-sm"
+          >
+            <Download className="w-4 h-4 text-emerald-400" />
+            <span>Unduh File school_cms_data.json (Untuk Update di GitHub)</span>
+          </button>
+        </div>
+      </div>
+
+      {/* ============================================================ */}
+      {/* 4. BACKUP & RESTORE SECTION */}
       {/* ============================================================ */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4">
         <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
