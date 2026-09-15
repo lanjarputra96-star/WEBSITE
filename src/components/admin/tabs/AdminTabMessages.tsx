@@ -26,7 +26,8 @@ export const AdminTabMessages: React.FC = () => {
     deleteMessage, 
     deleteAllMessages, 
     markMessageAsRead,
-    fetchMessages 
+    fetchMessages,
+    data
   } = useSchool();
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -329,7 +330,7 @@ export const AdminTabMessages: React.FC = () => {
                   {msg.email && (
                     <a
                       href={`mailto:${msg.email}?subject=${encodeURIComponent(
-                        `Re: ${msg.subject} - SMA Nusantara Cendekia`
+                        `Re: ${msg.subject} - ${data.schoolInfo?.name || 'Sekolah'}`
                       )}`}
                       className="inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition shadow-xs"
                     >

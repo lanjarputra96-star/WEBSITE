@@ -19,6 +19,8 @@ export interface SchoolInfo {
   operatingHours: string;
   socialMedia: SocialMedia;
   logoUrl: string;
+  website?: string;
+  domain?: string;
 }
 
 export interface HeroBadge {
