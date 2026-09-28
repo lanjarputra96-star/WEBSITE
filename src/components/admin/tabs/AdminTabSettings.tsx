@@ -299,25 +299,53 @@ export const AdminTabSettings: React.FC = () => {
         <div className="bg-slate-950/80 border border-amber-500/30 rounded-2xl p-4 space-y-3">
           <div className="flex items-center gap-2 text-amber-400 font-bold text-xs">
             <Database className="w-4 h-4 text-amber-400 shrink-0" />
-            <span>Solusi Terhubung ke Binding Database Cloudflare Workers & Pages</span>
+            <span>Panduan Sukses Deploy & Binding Database Cloudflare</span>
           </div>
           <p className="text-[11px] text-slate-300 leading-relaxed">
-            Jika Anda mengalami kendala saat menghubungkan <strong>binding database</strong> di dasbor Cloudflare:
+            Jika sebelumnya Anda mengalami kegagalan saat deploy atau menghubungkan <strong>binding database</strong> di Cloudflare:
           </p>
           <div className="space-y-2 text-[11px] text-slate-300">
-            <div className="bg-slate-900/90 border border-slate-700/80 rounded-xl p-3 space-y-1">
-              <span className="font-bold text-amber-300 flex items-center gap-1.5">
+            <div className="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 space-y-1">
+              <span className="font-bold text-emerald-300 flex items-center gap-1.5">
                 <Check className="w-3.5 h-3.5 text-emerald-400" />
-                1. Multi-Binding Otomatis Aktif
+                1. Perbaikan Sistem yang Telah Diterapkan (Anti-Gagal)
               </span>
-              <p className="text-slate-300 leading-relaxed">
-                Sistem sekarang otomatis mendeteksi binding dengan nama apa pun: <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">SCHOOL_CMS_KV</code>, <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">KV</code>, <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">DATABASE</code>, atau <code className="bg-slate-800 px-1.5 py-0.5 rounded text-amber-200">DB</code> (baik KV Namespace maupun D1 Database).
-              </p>
+              <ul className="list-disc list-inside space-y-0.5 text-slate-300 leading-relaxed pl-1">
+                <li><strong>Duplikasi KV ID Dihapus:</strong> File <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">wrangler.toml</code> telah diperbaiki (sebelumnya ada 4 duplikasi ID yang memicu error saat build Cloudflare).</li>
+                <li><strong>Node.js 20 Dikonfigurasi:</strong> File <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">.nvmrc</code> dan <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">.node-version</code> telah ditambahkan agar Vite & Tailwind v4 berjalan lancar di Cloudflare Pages.</li>
+                <li><strong>Multi-Binding Otomatis:</strong> Mendukung binding KV (<code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">SCHOOL_CMS_KV</code>, <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">KV</code>) dan D1 Database (<code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">DB</code>, <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">DATABASE</code>).</li>
+              </ul>
             </div>
-            <div className="bg-slate-900/90 border border-slate-700/80 rounded-xl p-3 space-y-1">
+
+            <div className="bg-slate-900/90 border border-sky-500/30 rounded-xl p-3 space-y-1">
               <span className="font-bold text-sky-300 flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-sky-400" />
-                2. Cara Pasang Binding di Dasbor Cloudflare (Pages / Workers)
+                2. Pengaturan Wajib Saat Deploy di Cloudflare Pages (GitHub)
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 font-mono text-[10px]">
+                <div className="bg-slate-950 p-2 rounded-lg border border-slate-800">
+                  <span className="text-slate-400 block font-sans font-bold">Framework preset:</span>
+                  <span className="text-amber-300 font-bold">Vite</span> (atau None)
+                </div>
+                <div className="bg-slate-950 p-2 rounded-lg border border-slate-800">
+                  <span className="text-slate-400 block font-sans font-bold">Build command:</span>
+                  <span className="text-amber-300 font-bold">npm run build</span> (atau vite build)
+                </div>
+                <div className="bg-slate-950 p-2 rounded-lg border border-slate-800">
+                  <span className="text-slate-400 block font-sans font-bold">Build output directory:</span>
+                  <span className="text-amber-300 font-bold">dist</span>
+                </div>
+                <div className="bg-slate-950 p-2 rounded-lg border border-slate-800">
+                  <span className="text-slate-400 block font-sans font-bold">Environment Variable:</span>
+                  <span className="text-amber-300 font-bold">NODE_VERSION = 20</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-900/90 border border-slate-700/80 rounded-xl p-3 space-y-1">
+              <span className="font-bold text-amber-300 flex items-center gap-1.5">
+                <Database className="w-3.5 h-3.5 text-amber-400" />
+                3. Cara Pasang Binding di Dasbor Cloudflare (Pages / Workers)
               </span>
               <ol className="list-decimal list-inside space-y-1 text-slate-300">
                 <li>Buka Cloudflare Dashboard &rarr; <strong>Workers & Pages</strong> &rarr; Pilih proyek Anda.</li>

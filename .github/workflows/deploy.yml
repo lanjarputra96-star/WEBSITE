@@ -3,22 +3,28 @@ name: Deploy Website & Sync to Cloudflare
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Set up Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --include=dev
 
       - name: Sync Database to Cloudflare KV
         env:
@@ -27,11 +33,23 @@ jobs:
           CLOUDFLARE_KV_NAMESPACE_ID: ${{ secrets.CLOUDFLARE_KV_NAMESPACE_ID || '5b4256f6-8ce8-4a13-ae5c-0ae37fcd9b9b' }}
         run: node scripts/sync-to-cloudflare.js
 
-      - name: Build project
+      - name: Build Project
         run: npm run build
 
-      - name: Deploy to GitHub Pages 
+      - name: Deploy to Cloudflare Pages (Automatic)
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        uses: cloudflare/pages-action@v1
+        continue-on-error: true
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: sdn1palapa-web-cms
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages (Backup)
         uses: peaceiris/actions-gh-pages@v3
+        continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
